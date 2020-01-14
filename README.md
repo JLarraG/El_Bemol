@@ -1,2 +1,2 @@
 # El_Bemol
-web banda El Bemol
+En este repositorio se alojará la web de la Asociación El Bemol
