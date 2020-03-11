@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background: #99182e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.main {
+    margin: 0;
+    padding: 0;
+    background: #99182e;
+    width: 50%;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+a figure img {
+    width: 50%;
+}
+p {
+    text-align: center;
+    width: 50%;
+    font-size: 2em;
+}
