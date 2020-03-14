@@ -67,7 +67,7 @@ header .menu-movile {
 header #logo_grande img {
     margin: 2vw 0 0 0;
     float: left;
-    width: 50%;
+    width: 60%;
 }
 
 
@@ -300,15 +300,15 @@ footer ul li a figure:hover{
 }
 #logo_footer img,
 #logo_federación img{
-    width: 100%;/*diferente a >480px*/
+    width: 60%;
 }
 #envelope{
     padding: 0;
-    margin: 0;
+    margin: 10px;
     display: inline-block;
     text-align: center;
     vertical-align: top;
-    font-size: 50px;
+    font-size: 75px;
     color: #99182e;
 }
 #envelope:hover {
@@ -339,23 +339,32 @@ footer p a:hover{
 -------------------------*/
 @media screen and (min-width: 480px){/*FOOTER CHANGES*/
 
-/*-------------------------
-    4.    FOOTER  
--------------------------*/
-footer ul li{
-    width: 100px;
-}
-footer ul li a {
-    width: 90px;
-}
-footer ul li a figure{
-    width: 80px;
-}
+    /*-------------------------
+        4.    FOOTER  
+    -------------------------*/
+    footer ul li{
+        width: 130px;
+    }
+    footer ul li a {
+        width: 130px;
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+    }
+    footer ul li a figure{
+        width: 130px;
+    }
 
-#logo_footer img,
-#logo_federación img{
-    width: 68px;
-}
+    #logo_footer img,
+    #logo_federación img{
+        width: 100px;
+    }
+    #envelope{
+        font-size: 90px;
+    }
+    #envelope:hover {
+        font-size: 100px;
+    }
 }
 
 @media screen and (min-width: 600px){/*HEADER, NAVIGATION AND MAIN/BACKGROUND CHANGES*/
