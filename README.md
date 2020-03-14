@@ -1,7 +1,7 @@
 # El_Bemol
 En este repositorio se alojará la web de la Asociación El Bemol.
 
-    COLOURS:
+    *COLOURS*:
         colour1_garnet => #99182e;
         colour2 => white;
         colour3 => black;
@@ -14,9 +14,11 @@ En este repositorio se alojará la web de la Asociación El Bemol.
 
 # HTML
   - index.html
-  - banda_error-html
+  - asociacion_error.html
+  - banda_error.html
+  - actuaciones_error.html
 
 # CSS
-  normalize.css
-  main.css
-  error_404.css
+  - normalize.css
+  - main.css
+  - error_404.css
