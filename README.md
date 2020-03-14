@@ -1,6 +1,7 @@
 # El_Bemol
 En este repositorio se alojará la web de la Asociación El Bemol.
 
+    -------------------------
     *COLOURS*:
         colour1_garnet => #99182e;
         colour2 => white;
@@ -10,6 +11,7 @@ En este repositorio se alojará la web de la Asociación El Bemol.
     FONTS (sans-serif):
         Montserrat
         Michroma    
+    -------------------------
 
 
 # HTML
