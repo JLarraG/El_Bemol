@@ -13,8 +13,8 @@ En este repositorio se alojará la web de la Asociación El Bemol.
 
 
 # HTML
-  -index.html
-  -banda_error-html
+  - index.html
+  - banda_error-html
 
 # CSS
   normalize.css
