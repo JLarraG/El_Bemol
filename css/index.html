@@ -1,0 +1,183 @@
+<!-- HTML5 | "index.html" v1.0.1 | EL BEMOL | https://www.elbemol.es/ -->
+<!DOCTYPE html>
+<html lang="es-es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>El Bemol</title>
+    <meta name="description" content="Página web de la Asociación músico-cultural El Bemol, fundada en 2007 en Galapagar. Visítanos y conoce nuestras actividades y nuestra Banda de Música">
+    <meta name="keywords" content="el bemol, banda de música, galapagar, madrid, concierto, ensayo">
+    <meta name="author" content="www.linkedin.com/in/josé-larrañeta-190667b5">
+    <meta name="owner" content="Asociación músico-cultural El Bemol">
+    <meta name="robots" content="index, follow">
+    
+
+    <link rel="shortcut icon" href="img/Logo_Bemol_small.png">
+    <!--ICONOS DE FONT AWESOME-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Link al archivo CSS "normalize"-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--Link aL archivo de estilo CSS-->
+    <link rel="stylesheet" href="css/main.css">
+    <!--Links para las fuentes que usará la página-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Michroma&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
+</head>
+<body>
+    <header>
+        <div class="menu-movile">
+            <a href="index.html" id="header-logo-icon">
+                <figure id="logo_grande">
+                    <img src="img/Logo Bemol1.jpg" alt="Logo El Bemol">
+                </figure>
+            </a>
+
+
+            <!--Menú de ejemplo de: https://codepen.io/GeoffreyCrofte/pen/oCBxz-->
+            <!--Menú de ejemplo que hay que coger de modelo
+            <a href="#menu" id="toggle"><span></span></a>
+                <div id="menu">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                  </ul>
+                </div>
+            Fin de menú de ejemplo-->
+            
+            <a href="#menu" id="toggle"><span></span></a>
+                <nav id="menu">
+                    <ul class="navigation">
+                        <li><a href="asociacion_error.html">La Asociación</a></li><!--Cambiar a href="asociacion.html"-->
+                        <li><a href="banda_error.html">Banda de música</a></li><!--Cambiar a href="asociacion.html"-->
+                        <li><a href="actuaciones_error.html">Actuaciones</a></li><!--Cambiar a href="asociacion.html"-->
+                            <!--<ul>
+                                <li><a href="prox.html">Próximas</a></li>
+                                <li><a href="pasadas.html">Pasadas</a>
+                            </ul>-->
+                        <li><a target="_blank" href="https://sites.google.com/site/elbemolgalapagar/home">Área de socios</a></li>
+                        <li><a href="https://forms.gle/AyujCg8BsFD2gwei6" target="_blank">Contacto</a></li>
+                    </ul>
+                    <ul class="social-icons">
+                        <li>
+                            <a href="https://www.facebook.com/bandaelbemol" target="_blank">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/BandaElBemol" target="_blank">
+                                <i class="fa fa-twitter"></i>
+                            </a>    
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/user/ElBemolUtube" target="_blank">
+                                <i class="fa fa-youtube"></i>
+                            </a>    
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/banda_el_bemol/" target="_blank">
+                                <i class="fa fa-instagram"></i>
+                            </a>    
+                        </li>
+                    </ul>
+                </nav>
+        </div>
+    </header>
+    <main id="background">    
+        <hgroup id="credits">
+            <h1>EL BEMOL</h1>
+            <h2>ASOCIACIÓN MUSICAL</h2>
+        </hgroup>
+        <!--<figure id="background-bemol">
+            <img src="img/DSC_0138.JPG" alt="imagen banda El Bemol">
+        </figure>-->
+    </main>
+    <footer>
+        <div class="icons-footer">
+            <ul id="footer-nav">
+                <li>
+                    <a href="index.html" id="logo_footer">
+                        <figure>
+                            <img src="img/Logo Bemol1.jpg" alt="Logo El Bemol">
+                            <figcaption>El Bemol</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://forms.gle/AyujCg8BsFD2gwei6" target="_blank">
+                        <span class="fa fa-envelope-o" id="envelope"></span>
+                    </a>
+                </li>                        
+                <li>
+                    <a href="http://frsmcm.org/" id="logo_federación" target="_blank">
+                        <figure>
+                            <img src="img/Logo federación.jpg" alt="Logo federación">
+                            <figcaption>Federación Regional de Sociedades Musicales de la Comunidad de Madrid</figcaption>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p>
+            &copy; 2007-2019 | <a href="http://www.elbemol.es" target="_blank">Asociación músico-cultural El Bemol</a>
+        </p>
+    </footer>
+
+
+    <!--Script de JS para para el toggle menu-->
+        <script>
+    var theToggle = document.getElementById('toggle');
+
+    // based on Todd Motto functions
+    // https://toddmotto.com/labs/reusable-js/
+            
+    // hasClass
+    function hasClass(elem, className) {
+    	return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
+    }
+    // addClass
+    function addClass(elem, className) {
+        if (!hasClass(elem, className)) {
+        	elem.className += ' ' + className;
+        }
+    }
+    // removeClass
+    function removeClass(elem, className) {
+    	var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, ' ') + ' ';
+    	if (hasClass(elem, className)) {
+            while (newClass.indexOf(' ' + className + ' ') >= 0 ) {
+                newClass = newClass.replace(' ' + className + ' ', ' ');
+            }
+            elem.className = newClass.replace(/^\s+|\s+$/g, '');
+        }
+    }
+    // toggleClass
+    function toggleClass(elem, className) {
+    	var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, " " ) + ' ';
+        if (hasClass(elem, className)) {
+            while (newClass.indexOf(" " + className + " ") >= 0 ) {
+                newClass = newClass.replace( " " + className + " " , " " );
+            }
+            elem.className = newClass.replace(/^\s+|\s+$/g, '');
+        } else {
+            elem.className += ' ' + className;
+        }
+    }
+    
+    theToggle.onclick = function() {
+       toggleClass(this, 'on');
+       return false;
+        }</script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150763142-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-150763142-1');
+    </script>
+</body>
+</html>
