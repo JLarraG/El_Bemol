@@ -35,9 +35,9 @@
     0.    GENERIC
 -------------------------*/
 body {
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
     background: black;
-    overflow-y: hidden;
+    overflow-x: hidden;
     /*margin: 0;
     padding: 0;
     
@@ -59,6 +59,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
+
 }
 /*  1.1. HEADER LOGO    */
 header .menu-movile {
@@ -221,7 +223,6 @@ main {
     background: url(../img/DSC_0138.JPG) top center no-repeat;
     background-size: cover;
     height: 82%;
-    overflow-x: hidden;
 }
 #credits {
     background: none;
