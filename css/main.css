@@ -37,7 +37,7 @@
 body {
     background-color: black;
     /*box-sizing: border-box;*/
-    /*overflow-x: auto;*/
+    overflow-y: auto;
 }
 
 
