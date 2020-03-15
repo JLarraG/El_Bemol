@@ -35,13 +35,9 @@
     0.    GENERIC
 -------------------------*/
 body {
+    background-color: black;
     /*box-sizing: border-box;*/
-    background: black;
-    overflow-x: hidden;
-    /*margin: 0;
-    padding: 0;
-    
-    overflow-y: auto;*/
+    /*overflow-x: auto;*/
 }
 
 
@@ -59,8 +55,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden;
-
 }
 /*  1.1. HEADER LOGO    */
 header .menu-movile {
