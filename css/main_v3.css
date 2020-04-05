@@ -1,0 +1,265 @@
+/* HTML5 | CSS3 for "index.html" v1.0.1 | EL BEMOL | https://www.elbemol.es/ */
+
+/* main_v2.css 1.0 | EL BEMOL | */
+/*
+    STYLES GUIDE:
+    0. NAV
+    1. TITLE
+    2. MAIN/GENERAL STYLES
+    3. ACTUACIONES/EVENTOS
+    4. LA ASOCIACIÓN
+    5. BANDA DE MÚSICA
+    6. FOOTER
+    -------------------------
+    COLOURS:
+        colour1_garnet => #99182e;
+        colour2 => white;
+        colour3 => black;
+        colour4_grey => #303030;
+    -------------------------
+    FONTS (sans-serif):
+        Montserrat
+        Michroma    
+    */
+
+ /* ==========================================================================
+   Begining of web styles definition
+   ========================================================================== */
+
+/*-------------------------
+    0.    NAV
+-------------------------*/
+nav {
+    font-family: 'Montserrat', sans-serif;
+    background: rgba(0, 0, 0, 0.8);
+}
+#navbarCollapse ul li a{
+    color: #99182e;
+    font-weight: bold;
+    text-shadow: white;
+    font-size: 1.3em;
+}
+#navbarCollapse ul li a:hover{
+    color: white;
+    transition: 0.5s;
+}
+
+
+/*-------------------------
+    1.    TITLE
+-------------------------*/
+#title {
+    padding-top: 40%;
+    font-family: 'Michroma', sans-serif;
+    font-weight: bold;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+                 0px 8px 13px rgba(0, 0, 0, 0.1)
+                 0px 18px 23px rgba(0, 0, 0, 0.1);
+    background: url(../img/DSC_0138.JPG) center no-repeat;
+    background-size: cover;
+    border-bottom: solid #99182e 1px;
+}
+#title-shadow {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#title h1 {
+    color: #99182e;
+}
+#title p {
+    color: white;
+}
+hr {
+    width: 50%;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+
+/*-------------------------
+    2.    MAIN/GENERAL STYLES
+-------------------------*/
+.main {
+    height: 80px;
+}
+#actuaciones {
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.3), white);
+}
+h3, h5 {
+    font-weight: bold;
+    color: #99182e;
+    font-family: 'Michroma', sans-serif;
+}
+.hr {
+    width: 100%;
+    color: #99182e;
+    border-top: 1px solid #99182e;
+    border-bottom: 1px solid rgba(153,24,46, 0.2);
+}
+.fade {
+    animation: 5s fade 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.elbemol {
+    color: #99182e;
+    font-family: 'Michroma', sans-serif;
+    font-size: 10vw;
+}
+.subtitle {
+    color: white;
+    font-family: 'Michroma', sans-serif;
+    font-size: 7vw;
+}
+.content {
+    background-color: #303030;
+    color: silver;
+    font-family: 'Montserrat', sans-serif;
+    border-top: solid 1px #99182e;
+    border-bottom: solid 1px #99182e;
+}
+
+
+/*-------------------------
+    3.    ACTUACIONES/EVENTOS
+-------------------------*/
+.card {
+    border: solid 1px #99182e;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*-------------------------
+    4.    LA ASOCIACIÓN
+-------------------------*/
+.enlace {
+    text-decoration: none;
+    transition: 0.7s;
+}
+.enlace:hover {
+    text-decoration: none;
+}
+#button {
+    background-color: #99182e;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+#button:hover {
+    background-color: white;
+    color: #99182e;
+    transition: 0.7s;
+}
+ 
+
+/*-------------------------
+    5.    BANDA DE MÚSICA
+-------------------------*/
+
+
+
+
+/*-------------------------
+    6.    FOOTER
+-------------------------*/
+footer {
+    background-color: black;
+}
+footer ul {
+    text-decoration: none;
+    list-style: none;
+}
+#facebook, #instagram, #twitter, #youtube {
+    font-size: x-large;
+}
+#facebook {
+    color: #3b5998;
+}
+#instagram {
+    color: grey;
+}
+#twitter {
+    color: #00acee;
+}
+#youtube {
+    color: #c4302b;
+}
+#facebook:hover, #instagram:hover, #twitter:hover, #youtube:hover{
+    color: #99182e;
+    transition: 0.5s;
+}
+footer p {
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 0px 0px 0px;
+    margin: 0;
+    color: #99182e;
+    font-size: 1em;
+    text-align: center;
+}
+footer p a{
+    text-decoration: none;
+    color: white;
+}
+footer p a:hover{
+    text-decoration: none;
+    color: #99182e;
+    transition: 0.7s;
+}
+#sign {
+    font-size: 0.65em;
+}
+#diseño {
+    font-size: 0.6em;
+}
+
+
+
+@media screen and (min-width: 576px) {
+    #sign {
+        font-size: 0.9em;
+    }
+    #diseño {
+        font-size: 0.7em;
+    }
+}
+@media screen and (min-width: 768px) {
+    .elbemol {
+        font-size: 8vw;
+    }
+    .subtitle {
+        font-size: 6vw;
+    }
+    #facebook, #instagram, #twitter, #youtube {
+        font-size: xx-large;
+    }
+    #sign {
+        font-size: 1em;
+    }
+    #diseño {
+        font-size: 0.8em;
+    }
+   
+}
+@media screen and (min-width: 992px) {
+    .elbemol {
+        font-size: 6.5vw;
+    }
+    .subtitle {
+        font-size: 4.5vw;
+    }
+   
+}
+@media screen and (min-width: 1200px) {
+    .elbemol {
+        font-size: 4.5vw;
+    }
+    .subtitle {
+        font-size: 2.5vw;
+    }
+}
