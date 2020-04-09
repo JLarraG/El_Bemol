@@ -7,16 +7,17 @@
     1. TITLE
     2. MAIN/GENERAL STYLES
     3. ACTUACIONES/EVENTOS
-    4. LA ASOCIACIÓN
-    5. BANDA DE MÚSICA
-    6. FOOTER
-    7. MEDIA QUERIES
+    4. ENLACES con GRID
+    5. LA ASOCIACIÓN
+    6. BANDA DE MÚSICA
+    7. FOOTER
+    8. MEDIA QUERIES
     -------------------------
     COLOURS:
         colour1_garnet => #99182e;
         colour2 => white;
         colour3 => black;
-        colour4_grey => #303030;
+        colour4_grey => #222;
     -------------------------
     FONTS (sans-serif):
         Montserrat
@@ -45,7 +46,6 @@ nav {
     transition: 0.5s;
 }
 
-
 /*-------------------------
     1.    TITLE
 -------------------------*/
@@ -56,9 +56,8 @@ nav {
     text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
                  0px 8px 13px rgba(0, 0, 0, 0.1)
                  0px 18px 23px rgba(0, 0, 0, 0.1);
-    background: url(../img/DSC_0138.JPG) center no-repeat;
+    background: url(../img/portada.jpg) center no-repeat;
     background-size: cover;
-    border-bottom: solid #99182e 1px;
 }
 /*#title-shadow {
     background-color: rgba(0, 0, 0, 0.3);
@@ -69,30 +68,26 @@ nav {
 #title p {
     color: white;
 }
+
+/*-------------------------
+    2.    MAIN/GENERAL STYLES
+-------------------------*/
 hr {
     width: 50%;
     border-top: 1px solid #f8f8f8;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
-
-
-/*-------------------------
-    2.    MAIN/GENERAL STYLES
--------------------------*/
+/*.hr {
+    width: 50%;
+    color: white;
+}*/
 .main {
     height: 80px;
-}
-#actuaciones {
-    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.3), white);
 }
 h3, h5 {
     font-weight: bold;
     color: #99182e;
     font-family: 'Michroma', sans-serif;
-}
-.hr {
-    width: 50%;
-    color: white;
 }
 .fade {
     animation: 5s fade 1;
@@ -105,6 +100,10 @@ h3, h5 {
     100%{
         opacity: 1;
     }
+}
+.card {
+    border: solid 1px #99182e;
+    font-family: 'Montserrat', sans-serif;
 }
 .elbemol {
     color: #99182e;
@@ -121,22 +120,62 @@ h3, h5 {
     color: #303030;
     font-family: 'Montserrat', sans-serif;
 }
-.texto {
-    font-size: 0.9em;
-}
-
 
 /*-------------------------
     3.    ACTUACIONES/EVENTOS
 -------------------------*/
-.card {
-    border: solid 1px #99182e;
+.evento {
     font-family: 'Montserrat', sans-serif;
 }
-
+.evento:hover {
+    text-decoration: none;
+    color: #99182e;
+    font-weight: bold;
+}
+.nombre-evento {
+    font-size: 0.9em;
+    text-align: center;
+}
+.texto {
+    font-size: 0.8em;
+    color: black;
+}
 
 /*-------------------------
-    4.    LA ASOCIACIÓN
+    4.    ENLACES con GRID
+-------------------------*/
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.middle {
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+.container:hover .image {
+    opacity: 0.3;
+}
+.container:hover .middle {
+    opacity: 1;
+}
+.text {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/*-------------------------
+    5.    LA ASOCIACIÓN
 -------------------------*/
 .enlace {
     text-decoration: none;
@@ -144,6 +183,8 @@ h3, h5 {
 }
 .enlace:hover {
     text-decoration: none;
+    color: #99182e;
+    font-weight: 900;
 }
 #button {
     background-color: #99182e;
@@ -154,24 +195,25 @@ h3, h5 {
 #button:hover {
     background-color: white;
     color: #99182e;
+    border: solid 1px #99182e;
     transition: 0.7s;
 }
  
 
 /*-------------------------
-    5.    BANDA DE MÚSICA
+    6.    BANDA DE MÚSICA
 -------------------------*/
-#banda {
+/*#banda {
     border-color: white;
-}
+}*/
 
 
 
 /*-------------------------
-    6.    FOOTER
+    7.    FOOTER
 -------------------------*/
 footer {
-    background-color: black;
+    background-color: #222;
 }
 footer ul {
     text-decoration: none;
@@ -214,15 +256,25 @@ footer p a:hover{
     transition: 0.7s;
 }
 #sign {
-    font-size: 0.65em;
+    font-size: 0.55em;
 }
 #diseño {
-    font-size: 0.6em;
+    font-size: 0.5em;
 }
 
-
-
-@media screen and (min-width: 576px) {
+/*-------------------------
+    8.    MEDIA QUERIES
+-------------------------*/
+@media screen and (min-width: 576px) {/*Footer changes*/
+    /*-------------------------
+    4.    ENLACES con GRID
+    -------------------------*/
+    .text {
+        font-size: 1em;
+    }
+    /*-------------------------
+    7.    FOOTER
+    -------------------------*/
     #sign {
         font-size: 0.9em;
     }
@@ -230,13 +282,35 @@ footer p a:hover{
         font-size: 0.7em;
     }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {/*Main, Enlaces and Footer changes*/
+    /*-------------------------
+    2.    MAIN/GENERAL STYLES
+    -------------------------*/
     .elbemol {
         font-size: 8vw;
     }
     .subtitle {
         font-size: 6vw;
     }
+    /*-------------------------
+    4.    ENLACES con GRID
+    -------------------------*/
+    .middle {
+        opacity: 0;
+    }
+    .container:hover .image {
+        opacity: 0.3;
+    }
+    .container:hover .middle {
+        opacity: 1;
+    }
+    .text {
+        color: #99182e;
+        font-size: 2em;
+    }
+    /*-------------------------
+    7.    FOOTER
+    -------------------------*/
     #facebook, #instagram, #twitter, #youtube {
         font-size: xx-large;
     }
@@ -246,24 +320,41 @@ footer p a:hover{
     #diseño {
         font-size: 0.8em;
     }
-    .texto {
-        font-size: 1em;
-    }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) {/*Main changes*/
+    /*-------------------------
+    2.    MAIN/GENERAL STYLES
+    -------------------------*/
     .elbemol {
         font-size: 6.5vw;
     }
     .subtitle {
         font-size: 4.5vw;
     }
-   
+    /*#title h1 {
+        font-size: 2em;
+    }
+    #title p {
+        font-size: 2em;
+    }*/
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {/*Main and Actuaciones changes*/
+    /*-------------------------
+    2.    MAIN/GENERAL STYLES
+    -------------------------*/
     .elbemol {
         font-size: 4.5vw;
     }
     .subtitle {
         font-size: 2.5vw;
+    }
+    /*-------------------------
+    3.    ACTUACIONES/EVENTOS
+    -------------------------*/
+    .nombre-evento {
+        font-size: 1.2em;
+    }  
+    .texto {
+        font-size: 1em;
     }
 }
