@@ -101,7 +101,7 @@ h3, h5 {
         opacity: 1;
     }
 }
-.card {
+.card-evento {
     border: solid 1px #99182e;
     font-family: 'Montserrat', sans-serif;
 }
@@ -144,6 +144,11 @@ h3, h5 {
 /*-------------------------
     4.    ENLACES con GRID
 -------------------------*/
+.card-enlaces {
+    border-top: solid 1px #99182e;
+    border-bottom: solid 1px #99182e;
+    font-family: 'Montserrat', sans-serif;
+}
 .image {
     opacity: 1;
     display: block;
@@ -184,7 +189,6 @@ h3, h5 {
 .enlace:hover {
     text-decoration: none;
     color: #99182e;
-    font-weight: 900;
 }
 #button {
     background-color: #99182e;
@@ -256,10 +260,10 @@ footer p a:hover{
     transition: 0.7s;
 }
 #sign {
-    font-size: 0.55em;
+    font-size: 0.5em;
 }
 #diseño {
-    font-size: 0.5em;
+    font-size: 0.45em;
 }
 
 /*-------------------------
@@ -269,6 +273,10 @@ footer p a:hover{
     /*-------------------------
     4.    ENLACES con GRID
     -------------------------*/
+    .card-enlaces {
+        border-right: solid 1px #99182e;
+        border-left: solid 1px #99182e;
+    }
     .text {
         font-size: 1em;
     }
@@ -291,22 +299,6 @@ footer p a:hover{
     }
     .subtitle {
         font-size: 6vw;
-    }
-    /*-------------------------
-    4.    ENLACES con GRID
-    -------------------------*/
-    .middle {
-        opacity: 0;
-    }
-    .container:hover .image {
-        opacity: 0.3;
-    }
-    .container:hover .middle {
-        opacity: 1;
-    }
-    .text {
-        color: #99182e;
-        font-size: 2em;
     }
     /*-------------------------
     7.    FOOTER
@@ -337,6 +329,22 @@ footer p a:hover{
     #title p {
         font-size: 2em;
     }*/
+    /*-------------------------
+    4.    ENLACES con GRID
+    -------------------------*/
+    .middle {
+        opacity: 0;
+    }
+    .container:hover .image {
+        opacity: 0.3;
+    }
+    .container:hover .middle {
+        opacity: 1;
+    }
+    .text {
+        color: #99182e;
+        font-size: 2em;
+    }
 }
 @media screen and (min-width: 1200px) {/*Main and Actuaciones changes*/
     /*-------------------------
