@@ -265,9 +265,46 @@
     </div>
   </footer>        
 
+  <!--COOKIES-->
+  <div id="cajacookies">
+    <p>Éste sitio web usa cookies, si permanece aquí acepta su uso. Puede leer más sobre el uso de cookies en nuestra <a href="politica.html">política de privacidad</a>.
+      <button onclick="aceptarCookies()" class="pull-right btn btn-light"><i class="fa fa-times"></i> Aceptar y cerrar éste mensaje</button>
+    </p>
+  </div>
+
   <!--Scripts de BOOTSTRAP-->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150763142-1"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+     gtag('config', 'UA-150763142-1');
+  </script>
+  <!--Scripts de menaje de COOKIES-->
+  <script>
+    /* ésto comprueba la localStorage si ya tiene la variable guardada */
+    function compruebaAceptaCookies() {
+      if(localStorage.aceptaCookies == 'true'){
+        cajacookies.style.display = 'none';
+      }
+    }
+    
+    /* aquí guardamos la variable de que se ha
+    aceptado el uso de cookies así no mostraremos
+    el mensaje de nuevo */
+    function aceptarCookies() {
+      localStorage.aceptaCookies = 'true';
+      cajacookies.style.display = 'none';
+    }
+    
+    /* ésto se ejecuta cuando la web está cargada */
+    $(document).ready(function () {
+      compruebaAceptaCookies();
+    });
+  </script>
 </body>
 </html>
