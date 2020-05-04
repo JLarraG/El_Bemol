@@ -103,18 +103,6 @@
       <div class="col mb-3">
         <div class="card card-evento h-100">
           <a href="#actuaciones" class="evento">
-            <img src="img/Para_eventos/2mayo2.jpg" class="card-img-top" alt="Concierto fiestas 2 de mayo">
-            <div class="card-body">
-              <h5 class="card-title nombre-evento">Concierto fiestas 2 de mayo (SUSPENDIDO)</h5>
-              <p class="card-text texto">En este concierto interpretaremos música tradicional para celebrar las fiestas de la Comunidad de Madrid en el evento Bandas en Comunidad 2M.</p>
-              <p class="card-text"><small class="black">SUSPENDIDO</small></p>
-            </div>
-          </a>  
-        </div>
-      </div>
-      <div class="col mb-3">
-        <div class="card card-evento h-100">
-          <a href="#actuaciones" class="evento">
             <img src="img/Para_eventos/15mayo.jpg" class="card-img-top" alt="Concierto 15 de mayo">
             <div class="card-body">
               <h5 class="card-title nombre-evento">Concierto Popular de San Isidro (SUSPENDIDO)</h5>
@@ -137,7 +125,18 @@
         </div>
       </div>
       <div class="col mb-3">
-      </div>
+        <div class="card card-evento h-100">
+          <a href="#actuaciones" class="evento">
+            <img src="img/Para_eventos/Villaviciosa_Odón.jpg" class="card-img-top" alt="Festival de Bandas en Villaviciosa de Odón">
+            <div class="card-body">
+              <h5 class="card-title nombre-evento">20junio - Festival de Bandas en Villaviciosa de Odón</h5>
+              <p class="card-text texto">Intercambio musical con la Banda de Música "Andante non Troppo" de Villaviciosa de Odón.</p>
+              <p class="card-text"><small class="black">20 de junio a las 20:00 h. en la Plaza del Ayuntamiento de Villaviciosa de Odón</small></p>
+            </div>
+          </a>  
+        </div>
+      </div><!--
+      <div class="col mb-3"></div>
       <div class="col mb-3">
         <div class="card card-evento h-100">
           <a href="#actuaciones" class="evento">
@@ -150,8 +149,25 @@
           </a>  
         </div>
       </div>
-      <div class="col mb-3">
+      <div class="col mb-3"></div>-->
+    </div>
+    <div class="row container-fluid mt-3 mx-0 p-0 d-flex justify-content-center">
+      <div class="col-12 mt-3">
+        <h3 class="text-center mb-4">Estreno virtual del pasodoble "EL BEMOL"</h3>
       </div>
+      <div class="col-lg-4 mt-3"></div><!--Texto Covid19-->
+      <div class="col-lg-4 mt-3">
+        <p class="lead texto">La crisis sanitaria nos ha impedido presentar en directo el pasodoble "El Bemol" que nos ha dedicado Paulino Martí López.</p>
+        <p class="lead texto">Los integrantes de nuestra Banda de Música han hecho una grabación telemática durante el confinamiento.</p>
+      </div>
+      <div class="col-lg-4"></div>
+      <div class="d-none d-lg-block col-lg-2"></div><!--Vídeo pasodoble "El Bemol"-->
+      <div class="col-12 col-lg-8 mb-4">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/j_TMs_0A_YM" allowfullscreen></iframe>
+          </div>
+      </div>
+      <div class="d-none d-lg-block col-lg-2"></div>
     </div>
 
     <!--LÍNEA DIVISORA-->
@@ -294,5 +310,19 @@
   </div>
   </noscript>-->
   <!-- End Quantcast tag -->
+
+
+  <!-- Scropt para el collapse del navbar -->
+  <script>
+    $(document).ready(function() {
+      $('.itemNav').click(function() {
+        var $target = $('.nav-collapse');
+        if($target.hasClass('in')){
+          $target.removeClass('in').height(0).css('overflow','hidden');
+        
+      });
+    });
+  </script>
+  
 </body>
 </html>
