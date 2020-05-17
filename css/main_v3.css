@@ -35,6 +35,11 @@ nav {
     font-family: 'Montserrat', sans-serif;
     background: rgba(0, 0, 0, 0.8);
 }
+#movile-screen-title {
+    color: #99182e;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
 #navbarCollapse ul li a{
     color: #99182e;
     font-weight: bold;
@@ -138,6 +143,9 @@ h3, h5 {
 }
 .texto {
     font-size: 0.8em;
+    color: black;
+}
+.black {
     color: black;
 }
 
